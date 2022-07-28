@@ -1,0 +1,15 @@
+body{
+    background-image: url('https://img.freepik.com/free-vector/copy-space-wavy-white-background-layers_23-2148845469.jpg?w=2000');
+}
+.plp{
+    height: 100%;
+}
+#olp{
+    padding: 40px;
+}
+.mar{
+    margin-top: 10%;
+}
+.sss{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0.1, 0, 0.9, 0.0) !important;
+}
