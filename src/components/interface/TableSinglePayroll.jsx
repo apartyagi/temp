@@ -3,8 +3,8 @@ import { Table } from "antd";
 const columns = [
   {
     title: "EMPLOYEE NAME",
-    dataIndex: "name",
-    render: (text) => <a>{text}</a>,
+    dataIndex: "name",  
+    render: (text) => <a href="#">{text}</a>,
   },
   {
     title: "PAID DAYS	",
@@ -78,6 +78,7 @@ const TableSinglePayroll = () => {
   return (
     <div>
       <Table columns={columns} dataSource={data} pagination={false} />
+      
     </div>
   );
 };

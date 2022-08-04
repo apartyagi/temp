@@ -16,7 +16,7 @@ const columns = [
                 src={`https://joeschmoe.io/api/v1/random`}
                 style={{ width: 32 }}
               />
-            }
+            }  
           />
 
           {/*<Avatar src={record.productimage}/> */}

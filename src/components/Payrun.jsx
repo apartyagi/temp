@@ -1,9 +1,10 @@
 import React from "react";
 import { PageHeader, Tabs } from "antd";
-import Nopayrun from "./Nopayrun";
+import Nopayrun from "./interface/Nopayrun";
 import { Dropdown, Menu, Space, Divider } from "antd";
 import { DownOutlined, FilterOutlined } from "@ant-design/icons";
-import PayrollHistory from "./PayrollHistory";
+import PayrollHistory from "./interface/PayrollHistory";
+import RunPayroll from "./interface/RunPayroll";
 const { TabPane } = Tabs;
 const menu = (
   <Menu
@@ -36,7 +37,8 @@ const Payrun = () => {
         footer={
           <Tabs defaultActiveKey="1">
             <TabPane tab="Run Payroll" key="1">
-              <Nopayrun />
+              {/* <Nopayrun /> */}
+              <RunPayroll/>
             </TabPane>
             <TabPane tab="Payroll History" key="2">
               <Divider />

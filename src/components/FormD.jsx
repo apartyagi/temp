@@ -12,6 +12,13 @@ const FormD = ({next}) => {
     console.log(`checked = ${e.target.checked}`);
   };
 
+  const finalss=()=>{
+    message.success('This is a success message');
+    setTimeout(() => {
+      window.location.href='/';
+    }, 1000);
+  }
+
   return (
     <section className='container' style={{width:'45%'}}>
       <div>
@@ -93,7 +100,7 @@ const FormD = ({next}) => {
           <Divider/>
 
           <div>
-          <Button type="primary" onClick={()=>{message.success('This is a success message')}}  shape="round" size={`large`}>Finish</Button>
+          <Button type="primary" onClick={finalss} shape="round" size={`large`}>Finish</Button>
           </div>
       </div>
     </section>

@@ -12,6 +12,10 @@ import LoginPage from './pages/LoginPage';
 import Signup from './pages/Signup';
 import Payrun from './components/Payrun';
 import PayrollView from './components/PayrollView';
+import AddClient from './components/AddClient';
+import AllClients from './components/AllClients';
+import ClientDashboard from './components/ClientDashboard';
+import RunPayroll from './components/interface/RunPayroll';
 
 function App() {
   return (
@@ -30,8 +34,13 @@ function App() {
           <Route path="siemp">
             <Route path=":id" element={<SingleEmployee/>}/>
           </Route>
-          <Route path="cm" element={<NoClient/>}/>
-          
+          {/* <Route path="nocli" element={<NoClient/>}/>  */}
+          <Route path="cli" element={<AddClient/>}/>
+          <Route path="lici" element={<AllClients/>}/>
+          <Route path='sicli'>
+            <Route path=":id" element={<ClientDashboard/>}/>
+          </Route>
+          <Route path="test" element={<RunPayroll/>}/>
           </Route>
 
         <Route path="*" element={<h1>Not Found..</h1>}/>
@@ -44,4 +53,3 @@ function App() {
 }
 
 export default App;
-

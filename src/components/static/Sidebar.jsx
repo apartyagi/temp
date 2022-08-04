@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Outlet,Link } from "react-router-dom";
-import "./style/sidebar.css";
+import "../style/sidebar.css";
 import "antd/dist/antd.css";
 import {
   HomeOutlined,
@@ -68,7 +68,7 @@ const Sidebar = ({}) => {
             </Link>
           </Menu.Item>
           <Menu.Item key="6">
-            <Link to="/cm">
+            <Link to="/cli">
               <FormOutlined />
               <span>Client Master</span>
             </Link>

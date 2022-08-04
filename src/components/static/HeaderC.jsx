@@ -1,6 +1,6 @@
 import React from 'react'
 import {Layout, Button, Dropdown, Menu} from 'antd';
-import "./style/header.css";
+import "../style/header.css";
 import { Avatar } from 'antd';
 import {SettingOutlined ,QuestionCircleOutlined,BellOutlined,UsergroupAddOutlined  } from "@ant-design/icons"
 const { Header} = Layout;
