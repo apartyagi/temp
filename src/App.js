@@ -3,7 +3,7 @@ import * as React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AddEmployeeSections from './components/AddEmployeeSections';
-import NoClient from './components/NoClient';
+// import NoClient from './components/NoClient';
 import DashBoard from './components/DashBoard';
 import Noemployee from './components/Noemployee'
 import AllEmployeList from './components/AllEmployeList';
@@ -16,6 +16,7 @@ import AddClient from './components/AddClient';
 import AllClients from './components/AllClients';
 import ClientDashboard from './components/ClientDashboard';
 import RunPayroll from './components/interface/RunPayroll';
+import CurrentPayrollDetails from './components/CurrentPayrollDetails';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           <Route path="paydet">
             <Route path=":id" element={<PayrollView/>}/>
           </Route>
+        
+          <Route path='pay-curr' element={<CurrentPayrollDetails/>} />
           <Route path="emp" element={<AddEmployeeSections/>}/>
           <Route path="liemp" element={<AllEmployeList/>}/>
           <Route path="siemp">

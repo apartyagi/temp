@@ -85,12 +85,6 @@ const Sidebar = ({}) => {
               <span>Reports</span>
             </Link>
           </Menu.Item>
-          <Menu.Item key="9">
-            <Link to="/liemp">
-              <CheckSquareOutlined />
-              <span>lister</span>
-            </Link>
-          </Menu.Item>
         </Menu>
       </Sider>
       {/* SideBar End */}

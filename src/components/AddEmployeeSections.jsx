@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import FormA from "./FormA";
 import FormB from "./FormB";
 import FormC from "./FormC";
@@ -7,6 +7,17 @@ import { Steps,Divider } from "antd";
 const { Step } = Steps;
 
 const AddEmployeeSections = () => {
+
+  useEffect(() => {
+    const unloadCallback = (event) => {
+      event.preventDefault();
+      event.returnValue = "";
+      return "";
+    };
+    window.addEventListener("beforeunload", unloadCallback);
+    return () => window.removeEventListener("beforeunload", unloadCallback);
+  }, []);
+  
  
   const [current, setCurrent] = useState(0);
   const next = () => {

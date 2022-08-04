@@ -2,12 +2,20 @@ import React from 'react'
 import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import {Typography } from 'antd';
+import AllEmployeList from "./AllEmployeList";
 const { Title, Paragraph} = Typography;
+
 const Noemployee = () => {
   const navigate=useNavigate();
-  
+  const isEmployeeExist=true;  
   return (
-        <div class="container text-center rounded mx-auto d-block">
+        <>
+        {
+         (isEmployeeExist===true)?(<>
+          <AllEmployeList/>
+         </>):(
+         <>
+         <div class="container text-center rounded mx-auto d-block">
           <div>
             <br/>
             <br/>
@@ -24,7 +32,11 @@ const Noemployee = () => {
            <Paragraph>Capture all necessary details about your employees and manage their salary, allowances and reimbursement details in this module.</Paragraph>
            <Button onClick={()=>{navigate(`/emp`)}} type="primary">ADD EMPLOYEE</Button>
           </div>
-        </div>
+        </div> 
+         </>)
+        }  
+      
+        </>
   ) 
 }
 

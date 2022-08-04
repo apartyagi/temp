@@ -1,6 +1,6 @@
 import React from "react";
 import { Button,Divider } from 'antd';
-
+import {Link} from "react-router-dom";
 const RunPayroll = () => {
   return (
     <>
@@ -21,7 +21,9 @@ const RunPayroll = () => {
           <span><b>4</b></span>
         </div>
         <div className="col-md-3 mt-5">
+            <Link to='/pay-curr'>
             <Button type="primary" size="large">View Details</Button>
+            </Link>
         </div>
         <div className="mt-2">
           <p>Please approve this payroll before 21/08/2022 | 04:00 PM</p>
