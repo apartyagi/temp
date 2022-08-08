@@ -14,6 +14,7 @@ import { useParams, Link } from "react-router-dom";
 import { Typography } from "antd";
 import "antd/dist/antd.css";
 import FormB from "./FormB";
+import FormBViewSingEmployee from "./FormBViewSingEmployee";
 const { TabPane } = Tabs;
 const { Title, Text } = Typography;
 
@@ -154,7 +155,7 @@ const SingleEmployee = () => {
               </div>
             </TabPane>
             <TabPane tab="Salary Details" key="2">
-              <FormB />
+              <FormBViewSingEmployee/>
             </TabPane>
             <TabPane tab="Investments" key="3">
               Content of Tab Pane 3

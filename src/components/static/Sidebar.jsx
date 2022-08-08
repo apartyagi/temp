@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Outlet,Link } from "react-router-dom";
+import { Outlet,Link,NavLink } from "react-router-dom";
 import "../style/sidebar.css";
 import "antd/dist/antd.css";
 import {
@@ -42,48 +42,48 @@ const Sidebar = ({}) => {
             // backgroundColor:'#ffffff'
           }}
         />
-        <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
+        <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline" >
           <Menu.Item key="1">
-            <Link to="/">
+            <NavLink to="/">
               <HomeOutlined />
               <span>Home</span>
-            </Link>
+            </NavLink>
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to="/noemp">
+            <NavLink to="/noemp">
               <UserOutlined />
               <span>Employee</span>
-            </Link>
+            </NavLink>
           </Menu.Item>
           <Menu.Item key="4">
-            <Link to="/pay">
+            <NavLink to="/pay">
               <ExportOutlined />
               <span>Pay Runs</span>
-            </Link>
+            </NavLink>
           </Menu.Item>
           <Menu.Item key="5">
-            <Link to="/">
+            <NavLink to="/">
               <CheckSquareOutlined />
               <span>Approvals</span>
-            </Link>
+            </NavLink>
           </Menu.Item>
           <Menu.Item key="6">
-            <Link to="/cli">
+            <NavLink to="/cli">
               <FormOutlined />
               <span>Client Master</span>
-            </Link>
+            </NavLink>
           </Menu.Item>
           <Menu.Item key="7">
-            <Link to="/">
+            <NavLink to="/">
               <DollarOutlined />
               <span>Loans</span>
-            </Link>
+            </NavLink>
           </Menu.Item>
           <Menu.Item key="8">
-            <Link to="/">
+            <NavLink to="/">
               <CheckSquareOutlined />
               <span>Reports</span>
-            </Link>
+            </NavLink>
           </Menu.Item>
         </Menu>
       </Sider>

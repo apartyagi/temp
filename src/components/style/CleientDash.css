@@ -1,0 +1,11 @@
+.icn {
+  margin-top: 50px;
+  cursor: pointer;
+}
+.icn p i{
+  font-size: 15px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  border: 1px solid rgb(205, 209, 215);
+  padding: 7px;
+}
