@@ -24,7 +24,7 @@ const CurrentPayrollDetails = () => {
     <PageHeader
       className="site-page-header-responsive"
       onBack={() => window.history.back()}
-      title={`Regular Payroll ${"PAID"}`}
+      title={`Regular Payroll ${"Review"}`}
       extra={[
         <Button type="primary" key="2">Submit and Approve</Button>,
         <Button key="1">---</Button>,
